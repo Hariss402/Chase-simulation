@@ -76,7 +76,7 @@ Whenever these events occur, both vehicles adapt their routes according to their
 
 ## Output
 
-Each execution generates a `simulation.json` file containing the complete simulation history.
+Each execution has a "simulation_log" variable containing the complete simulation history.
 
 For every timestep, the simulator records:
 
@@ -88,20 +88,7 @@ For every timestep, the simulator records:
 * Escape status
 
 This structured output makes it easy to perform further analysis or build visualizations on top of the simulation engine.
-
----
-
-## Statistical Analysis
-
-Beyond individual simulations, the framework was executed **1000 independent times** to estimate overall system behaviour.
-
-The collected statistics include:
-
-* Police interception rate
-* Burglar escape rate
-* Average chase duration
-
-Running the simulation repeatedly transforms the project from a single chase scenario into a reusable experimentation framework for studying pursuit-evasion behaviour under dynamic environments.
+For better understanding there is "simulation.json" file in the repo.
 
 ---
 
@@ -177,5 +164,3 @@ Chase_simulation.ipynb
 ```
 
 and execute the notebook from top to bottom.
-
-The simulation will generate a fresh `simulation.json` file after every run.
